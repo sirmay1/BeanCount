@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a class="active" href="/client/index.html">Mr. Bean's</a>
+            <a href="/client/App.html">Bean's New Login</a>
+            <a href="/client/AppFormHandle.html">Bean's Login</a>
+            <a href="/client/beanCalculator.html">Bean's Calculator</a>
+          </nav> 
+    </header>
+    <div class="login-form-container">
+        <dialog class="dialog" id="d" title="Login Form">
+        <form class="login-container" id="formLogin" method="POST" action="">
+            <label for="fName">First Name</label>
+            <input type="text" name="fName" id="fName" class="fName" placeholder="enter first name...">
+            <label for="lName">Last Name</label>
+            <input type="text" name="lName" id="lName" class="lName" placeholder="enter last name...">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="email" placeholder="enter your email...">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="password" placeholder="enter your password...">
+            <br/><br/>
+            <button type="button" id="login_btn" class="login_btn" href="/client/App.html" onClick="d.showModal();">Login</button>
+        </form>
+        </dialog>
+    </div>
+    <article class="article-container">
+        <h3 class="explain-head">Welcome To The Coffee Count Tool...</h3>
+        <p class="explain-p">To make entries for your caffeine intake please enter the following:
+            Enter the date.
+            Enter your user name.
+            Enter a numeric value for the cup size.
+            Please select the radio checker to indicate the .oz size option.
+            Lastly, your total cups per day. Researching the exact quantity, coffee strength, quality, types, leads to many different
+            possibly variations of a large range of how much caffeine can be found in a typical cup of coffee
+            within a 6.oz cup. YES, the standard cup size is 6.oz due to the standard coffee machines which brew
+            coffee in general. Afterwards you would have to contend with other sizes such as 6.oz, 8.oz, 10.oz, 12.oz, 16.oz
+            21.oz, and yes even 29.oz exist! But doing further research I came to the conclusion that the two coffee types which
+            have the most in common is Arabic and Hispanic coffee from the Carribean such as Cuba and Puerto Rico which is where I am from.
+            echo"After 1 week of research and due to the volume of research which already exist on the numerous brands of coffee, types, strengths, value, quanity.
+            I have come to a general mathematical solution which is a bit of a range in the amount of caffeine per serving. This range isn't precise and it is primarily
+            aimed at coffee drinkers who typically drink cafeine from the Arab nations and the Carribean. Which is typically known as medium to strong coffee.
+            At the present moment this application is at its infancy and will slowly be improved upon in clarity with precision. Hopefully my findings will improve over time!
+            But at the present moment to my understanding it can be said that a medium roast 10.oz cup of coffee tends to be at 120mg of coffee after that the range will vary.
+            Please try out the "Bean-Calculator" and see how it works for you?
+        </p>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+</html>
